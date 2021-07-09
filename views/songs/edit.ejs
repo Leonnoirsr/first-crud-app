@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<h1>Edit Song</h1>
-		<form action="/songs/<%= song.id %>/edit ">
+		<form method="POST" action="/songs/<%=song.id%>?_method=PATCH"></form>
 			<input type="text" name="song" id="" placeholder="<%= song.song %> " />
 		</form>
 		<button>Save</button>
