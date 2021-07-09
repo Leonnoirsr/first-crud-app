@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Show Song</title>
+	</head>
+	<body>
+		<h1>Song Id: <%= song.id %></h1>
+		<h2><%= song.song %> - <%= song.artist %></h2>
+		<a href="/songs">Back to song list</a>
+		<a href="/songs/<%= song.id %>/edit">Edit Song</a>
+	</body>
+</html>

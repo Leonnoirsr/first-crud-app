@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Songs Index</title>
+	</head>
+	<body>
+		<h1>Songs</h1>
+
+		<ul>
+			<% for (let song of songs) { %>
+			<li>
+				<%=song.artist%> : <em><b><%=song.song%></b></em>
+				<a href="/songs/<%= song.id %> ">details</a>
+			</li>
+			<br />
+
+			<%}%>
+		</ul>
+
+		<a href="/songs/new">Add New Song</a>
+	</body>
+</html>
