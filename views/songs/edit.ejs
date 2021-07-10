@@ -9,12 +9,15 @@
 	<body>
 		<h1>Edit Song</h1>
 		<form method="POST" action="/songs/<%= song.id %>?_method=PATCH ">
-			<textarea name="song" id="" cols="30" rows="10">
-				<%= song.song %> 
-			</textarea>
+			<input
+				type="text"
+				name="song"
+				autocomplete="off"
+				placeholder="<%= song.song %> "
+			/>
 			<button>Save</button>
 		</form>
-		
+
 		<a href="/songs">Back To Songs</a>
 	</body>
 </html>
