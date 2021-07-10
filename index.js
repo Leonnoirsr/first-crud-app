@@ -50,7 +50,7 @@ app.get('/songs/:id', (req, res) => {
 app.get('/songs/:id/edit', (req, res) => {
 	const { id } = req.params;
 	const song = songs.find((song) => song.id === id);
-	res.render('./songs/edit', { song });
+	res.render('songs/edit', { song });
 });
 
 // Edit ---

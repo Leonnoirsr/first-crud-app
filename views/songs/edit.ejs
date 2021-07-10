@@ -8,10 +8,13 @@
 	</head>
 	<body>
 		<h1>Edit Song</h1>
-		<form method="POST" action="/songs/<%=song.id%>?_method=PATCH"></form>
-			<input type="text" name="song" id="" placeholder="<%= song.song %> " />
+		<form method="POST" action="/songs/<%= song.id %>?_method=PATCH ">
+			<textarea name="song" id="" cols="30" rows="10">
+				<%= song.song %> 
+			</textarea>
+			<button>Save</button>
 		</form>
-		<button>Save</button>
+		
 		<a href="/songs">Back To Songs</a>
 	</body>
 </html>
