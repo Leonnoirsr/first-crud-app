@@ -11,5 +11,8 @@
 		<h2><%= song.song %> - <%= song.artist %></h2>
 		<a href="/songs">Back to song list</a>
 		<a href="/songs/<%= song.id %>/edit">Edit Song</a>
+		<form method="POST" action="/songs/<%= song.id %>?_method=DELETE ">
+			<button>Delete</button>
+		</form>
 	</body>
 </html>
